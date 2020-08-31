@@ -19,3 +19,15 @@ print "#{nombres2}\n"
 nombres3 = nombres.select {|e| e[0] == "P"}
 
 print "#{nombres3}\n"
+
+#4) Utilizar .count para contar todos los elementos que empiecen con las letras "A", "B" o "C".
+
+nombres4 = nombres.count {|e| e[0] == "A" || e[0] == "B" || e[0] == "C"}
+
+print "#{nombres4}\n"
+
+#5) Utilizar map para crear un arreglo único con el tamaño de cada elementos
+
+nombres.map! {|e| e = e.length}
+
+print "#{nombres}\n"
